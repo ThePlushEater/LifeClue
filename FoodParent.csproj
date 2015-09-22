@@ -19,14 +19,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="core\css\app.css" />
+    <Content Include="core\css\font\bonvenocf-light\BonvenoCF-Light-demo.html" />
+    <Content Include="core\css\font\bonvenocf-light\BonvenoCF-Light-webfont.svg" />
+    <Content Include="core\css\font\bonvenocf-light\specimen_files\BonvenoCF-Light-cleartype.png" />
+    <Content Include="core\css\font\bonvenocf-light\specimen_files\easytabs.js" />
+    <Content Include="core\css\font\bonvenocf-light\specimen_files\grid_12-825-55-15.css" />
+    <Content Include="core\css\font\bonvenocf-light\specimen_files\specimen_stylesheet.css" />
+    <Content Include="core\css\font\bonvenocf-light\stylesheet.css" />
     <Content Include="core\css\fruitparent.css">
-      <DependentUpon>fruitparent.css.bundle</DependentUpon>
+      <DependentUpon>foodparent.css.bundle</DependentUpon>
     </Content>
     <Content Include="core\css\fruitparent.min.css">
       <DependentUpon>fruitparent.css</DependentUpon>
     </Content>
     <Content Include="core\js\fruitparent.js">
-      <DependentUpon>fruitparent.js.bundle</DependentUpon>
+      <DependentUpon>foodparent.js.bundle</DependentUpon>
     </Content>
     <Content Include="core\js\fruitparent.min.js">
       <DependentUpon>fruitparent.js</DependentUpon>
@@ -51,6 +58,10 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="core\js\app.ts" />
+    <TypeScriptCompile Include="core\js\controller\controller.ts" />
+    <TypeScriptCompile Include="core\js\controller\setting.ts" />
+    <TypeScriptCompile Include="core\js\model\model.ts" />
+    <TypeScriptCompile Include="core\js\view\view.ts" />
     <TypeScriptCompile Include="Scripts\typings\backbone\backbone.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\backgrid\backgrid.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\bootstrap.v3.datetimepicker\bootstrap.v3.datetimepicker.d.ts" />
@@ -62,11 +73,14 @@
     <TypeScriptCompile Include="Scripts\typings\underscore\underscore.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="core\js\fruitparent.js.bundle" />
+    <Content Include="core\js\foodparent.js.bundle" />
     <Content Include="core\js\fruitparent.min.js.map">
       <DependentUpon>fruitparent.min.js</DependentUpon>
     </Content>
-    <Content Include="core\css\fruitparent.css.bundle" />
+    <Content Include="core\css\foodparent.css.bundle" />
+    <Content Include="core\css\font\bonvenocf-light\BonvenoCF-Light-webfont.eot" />
+    <Content Include="core\css\font\bonvenocf-light\BonvenoCF-Light-webfont.ttf" />
+    <Content Include="core\css\font\bonvenocf-light\BonvenoCF-Light-webfont.woff" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -77,9 +91,6 @@
   <ItemGroup>
     <Folder Include="core\image\" />
     <Folder Include="core\json\" />
-    <Folder Include="core\js\controller\" />
-    <Folder Include="core\js\model\" />
-    <Folder Include="core\js\view\" />
     <Folder Include="core\php\" />
   </ItemGroup>
   <PropertyGroup>

@@ -27967,3 +27967,157 @@ var Grid = Backgrid.Grid = Backbone.View.extend({
 
 }));
 
+///#source 1 1 /core/js/app.js
+function mod(n, m) {
+    return ((n % m) + m) % m;
+}
+$(document).ready(function () {
+    var url = window.location;
+    FruitParent.Setting.setBaseUrl(url.origin + window.location.pathname);
+    FruitParent.View.setElement({ el: $('#view-main') });
+});
+//# sourceMappingURL=app.js.map
+///#source 1 1 /core/js/view/view.js
+var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var FruitParent;
+(function (FruitParent) {
+    var View = (function (_super) {
+        __extends(View, _super);
+        function View(options) {
+            if (View._instance) {
+                throw new Error("Error: Instantiation failed: Use View.getInstance() instead of new.");
+            }
+            View._instance = this;
+            _super.call(this, options);
+        }
+        View.setElement = function (options) {
+            View._instance.setElement(options.el);
+        };
+        View.getInstance = function () {
+            return View._instance;
+        };
+        View.prototype.render = function () {
+            var that = this;
+        };
+        View._instance = new View();
+        return View;
+    })(Backbone.View);
+    FruitParent.View = View;
+})(FruitParent || (FruitParent = {}));
+//# sourceMappingURL=View.js.map
+///#source 1 1 /core/js/model/model.js
+var FruitParent;
+(function (FruitParent) {
+    var Model = (function () {
+        function Model() {
+            if (Model._instance) {
+                throw new Error("Error: Instantiation failed: Use Model.getInstance() instead of new.");
+            }
+            Model._instance = this;
+        }
+        Model.getInstance = function () {
+            return Model._instance;
+        };
+        Model._instance = new Model();
+        return Model;
+    })();
+    FruitParent.Model = Model;
+})(FruitParent || (FruitParent = {}));
+//# sourceMappingURL=model.js.map
+///#source 1 1 /core/js/controller/controller.js
+var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var FruitParent;
+(function (FruitParent) {
+    var Controller = (function () {
+        function Controller(args) {
+            if (Controller._instance) {
+                throw new Error("Error: Instantiation failed: Use Controller.getInstance() instead of new.");
+            }
+            Controller._instance = this;
+        }
+        Controller.getInstance = function () {
+            return Controller._instance;
+        };
+        Controller._instance = new Controller();
+        return Controller;
+    })();
+    FruitParent.Controller = Controller;
+    var Router = (function (_super) {
+        __extends(Router, _super);
+        function Router(options) {
+            if (Router._instance) {
+                throw new Error("Error: Instantiation failed: Use Router.getInstance() instead of new.");
+            }
+            Router._instance = this;
+            // Setup Router parameters
+            this.routes = {
+                "": "home",
+                "trees": "trees",
+                "donations": "donations",
+                "tree/:id": "tree",
+                "donation/:id": "donation",
+            };
+            _super.call(this, options);
+            // Start Router
+            Backbone.history.start();
+        }
+        Router.getInstance = function () {
+            return Router._instance;
+        };
+        Router.prototype.home = function () {
+            //console.log("we have loaded the home page");
+            this.navigate("trees", { trigger: true, replace: true });
+        };
+        Router.prototype.trees = function () {
+            console.log("we have loaded the trees");
+        };
+        Router.prototype.donations = function () {
+            console.log("we have loaded the donations");
+        };
+        Router.prototype.tree = function (id) {
+            console.log("we have loaded the tree id: " + id);
+        };
+        Router.prototype.donation = function (id) {
+            console.log("we have loaded the donation id: " + id);
+        };
+        Router._instance = new Router();
+        return Router;
+    })(Backbone.Router);
+    FruitParent.Router = Router;
+})(FruitParent || (FruitParent = {}));
+//# sourceMappingURL=controller.js.map
+///#source 1 1 /core/js/controller/setting.js
+var FruitParent;
+(function (FruitParent) {
+    var Setting = (function () {
+        function Setting(args) {
+            if (Setting._instance) {
+                throw new Error("Error: Instantiation failed: Use Setting.getInstance() instead of new.");
+            }
+            Setting._instance = this;
+        }
+        Setting.getInstance = function () {
+            return Setting._instance;
+        };
+        Setting.setBaseUrl = function (url) {
+            Setting._instance.baseUrl = url;
+        };
+        Setting.getBaseUrl = function () {
+            return Setting._instance.baseUrl;
+        };
+        Setting._instance = new Setting();
+        return Setting;
+    })();
+    FruitParent.Setting = Setting;
+})(FruitParent || (FruitParent = {}));
+//# sourceMappingURL=setting.js.map

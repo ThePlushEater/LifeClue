@@ -1,23 +1,9 @@
-var Greeter = (function () {
-    function Greeter(element) {
-        this.element = element;
-        this.element.innerHTML += "The time is: ";
-        this.span = document.createElement('span');
-        this.element.appendChild(this.span);
-        this.span.innerText = new Date().toUTCString();
-    }
-    Greeter.prototype.start = function () {
-        var _this = this;
-        this.timerToken = setInterval(function () { return _this.span.innerHTML = new Date().toUTCString(); }, 500);
-    };
-    Greeter.prototype.stop = function () {
-        clearTimeout(this.timerToken);
-    };
-    return Greeter;
-})();
-window.onload = function () {
-    var el = document.getElementById('content');
-    var greeter = new Greeter(el);
-    greeter.start();
-};
+function mod(n, m) {
+    return ((n % m) + m) % m;
+}
+$(document).ready(function () {
+    var url = window.location;
+    FruitParent.Setting.setBaseUrl(url.origin + window.location.pathname);
+    FruitParent.View.setElement({ el: $('#view-main') });
+});
 //# sourceMappingURL=app.js.map

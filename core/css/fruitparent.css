@@ -731,11 +731,62 @@
 .backgrid .moment-cell.editor input[type=text] {
   text-align: right;
 }
-body {
-    font-family: 'Segoe UI', sans-serif;
-}
+@media all {
+    * {
+        margin: 0;
+        padding: 0;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
 
-span {
-    font-style: italic;
-}
+    html {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
 
+    body {
+        width: 100%;
+        height: 100%;
+        font-size: large;
+        line-height: 1.6em;
+        overflow: hidden;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        color: #000000;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    img, div {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    div {
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    h1, h2, h3, h4 {
+        font-weight: normal;
+    }
+
+    img { 
+        pointer-events: none;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+
+}
