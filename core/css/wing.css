@@ -1,0 +1,178 @@
+﻿@media all {
+    #panel-wing {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50px;
+        padding-top: 38px;
+        left: 100%;
+        background-color: #453748;
+        color: #d7ccd0;
+        opacity: 0.75;
+        overflow-y: scroll;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    #panel-wing.show {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        left: 0;
+    }
+
+    #panel-wing .btn {
+        padding: 9px 12px;
+        width: 100%;
+        font-weight: 600;
+    }
+
+    #panel-wing .col-left-padding {
+        padding-left: 60px !important;
+    }
+
+    #panel-wing .wing-h1{
+        color: #ffffff;
+    }
+    #panel-wing .wing-h2{
+        font-size: small;
+        color: #ffffff;
+        font-weight: 400;
+    }
+
+    #panel-wing .col-top-padding {
+        padding-top: 12px;
+    }
+    #panel-wing .transparent {
+        opacity: 0.55;
+    }
+
+    .character-1 {
+        color: #ea382c;
+    }
+    .character-2 {
+        color: #8887c3;
+    }
+    .character-3 {
+        color: #0194b5;
+    }
+    .character-4 {
+        color: #73aa4d;
+    }
+    .character-5 {
+        color: #f3b234;
+    }
+    .character-6 {
+        color: #000000;
+    }
+
+    .location {
+        color: #2c3e50;
+    }
+
+    .character-1.selected {
+        color: #ffffff !important;
+        background-color: #ea382c !important;
+        text-decoration: none !important;
+        opacity: 1 !important;
+    }
+    .character-2.selected {
+        color: #ffffff !important;
+        background-color: #8887c3 !important;
+        text-decoration: none !important;
+        opacity: 1 !important;
+    }
+    .character-3.selected {
+        color: #ffffff !important;
+        background-color: #0194b5 !important;
+        text-decoration: none !important;
+        opacity: 1 !important;
+    }
+    .character-4.selected {
+        color: #ffffff !important;
+        background-color: #73aa4d !important;
+        text-decoration: none !important;
+        opacity: 1 !important;
+    }
+    .character-5.selected {
+        color: #ffffff !important;
+        background-color: #f3b234 !important;
+        text-decoration: none !important;
+        opacity: 1 !important;
+    }
+    .character-6.selected {
+        color: #ffffff !important;
+        background-color: #000000 !important;
+        text-decoration: none !important;
+        opacity: 1 !important;
+    }
+
+    #panel-wing .disabled {
+        text-decoration: line-through;
+        opacity: 0.25;
+    }
+
+    #panel-wing .form-group {
+        width: 100%;
+        clear: both;
+    }
+
+    #panel-wing select {
+        width: 100%;
+        color: #000000;
+        font-size: small;
+    }
+
+    #panel-wing label {
+        font-size: small;
+    }
+
+    #panel-wing .label-header {
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 400;
+    }
+
+    #panel-wing .layer-checkbox {
+        text-align: left;
+    }
+
+    #panel-wing input[type="text"] {
+        padding-left: 4px;
+        width: 100%;
+        color: #000;
+        font-size: 14px;
+    }
+
+    input[type=checkbox] {
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+    #panel-wing hr {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+        color: #fff;
+    }
+}

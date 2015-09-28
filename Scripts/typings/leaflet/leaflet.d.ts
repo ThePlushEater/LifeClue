@@ -2692,6 +2692,7 @@ declare module L {
           * can also open the bound popup with the Marker openPopup method.
           */
         bindPopup(html: string, options?: PopupOptions): Marker;
+        bindLabel(html: string, options?: any): Marker;
     
         /**
           * Binds a popup with a particular HTML content to a click on this marker. You

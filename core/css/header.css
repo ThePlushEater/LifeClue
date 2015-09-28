@@ -1,0 +1,35 @@
+﻿@media all {
+    #menu-header {
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 16px 16px 16px;
+    }
+
+    #menu-header:before {
+        padding: 0;
+        content: url("../image/menu.png");
+        content: -webkit-image-set(url("../image/icon-menu.png") 1x, url("../image/icon-menu2x.png") 2x);
+    }
+
+    #gps-status{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 5px;
+        background-color: #fff;
+    }
+    
+    #database-status {
+        position: absolute;
+        top: 0;
+        left: 5px;
+        width: 5px;
+        height: 5px;
+        background-color: #f00;
+    }
+}
+

@@ -1,4 +1,4 @@
-﻿module FruitParent {
+﻿module LifeClue {
     export class Model {
         private static _instance: Model = new Model();
         constructor() {

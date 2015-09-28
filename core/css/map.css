@@ -1,0 +1,36 @@
+﻿@media all {
+    .leaflet-left .leaflet-control {
+        margin-left: 8px;
+    }
+    .leaflet-top .leaflet-control {
+        margin-top: 36px;
+    }
+    .leaflet-control .control-button {
+        display: block;
+        height: 40px;
+        width: 40px;
+        background-color: #333;
+        background-color: rgba(0,0,0,0.6);
+        border-radius: 0 4px 4px 4px 0;
+        margin-bottom: 10px;
+        outline: none;
+    }
+    .leaflet-control .zoomin {
+        cursor: pointer;
+        margin-bottom: 0;
+        border-radius: 0 4px 0 0;
+        background-image: url('../image/icon-plus-inactive.png');
+    }
+    .leaflet-control .zoomout {
+        cursor: pointer;
+        margin-bottom: 0;
+        border-radius: 0 0 4px 0;
+        background-image: url('../image/icon-minus-inactive.png');
+    }
+    .leaflet-control .locate {
+        cursor: pointer;
+        margin-top: 2px;
+        border-radius: 4px;
+        background-image: url('../image/icon-arrow-inactive.png');
+    }
+}

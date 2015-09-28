@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{69797E7A-C024-4139-8FAA-F69E37791C0E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.4</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="core\css\app.css" />
+    <Content Include="core\css\base.css" />
+    <Content Include="core\css\font\bonvenocf-light\BonvenoCF-Light-demo.html" />
+    <Content Include="core\css\font\bonvenocf-light\BonvenoCF-Light-webfont.svg" />
+    <Content Include="core\css\font\bonvenocf-light\specimen_files\BonvenoCF-Light-cleartype.png" />
+    <Content Include="core\css\font\bonvenocf-light\specimen_files\easytabs.js" />
+    <Content Include="core\css\font\bonvenocf-light\specimen_files\grid_12-825-55-15.css" />
+    <Content Include="core\css\font\bonvenocf-light\specimen_files\specimen_stylesheet.css" />
+    <Content Include="core\css\font\bonvenocf-light\stylesheet.css" />
+    <Content Include="core\css\header.css" />
+    <Content Include="core\css\lifeclue.css">
+      <DependentUpon>lifeclue.css.bundle</DependentUpon>
+    </Content>
+    <Content Include="core\css\lifeclue.min.css">
+      <DependentUpon>lifeclue.css</DependentUpon>
+    </Content>
+    <Content Include="core\css\map.css" />
+    <Content Include="core\css\wing.css" />
+    <Content Include="core\image\icon-arrow-inactive.png" />
+    <Content Include="core\image\icon-minus-inactive.png" />
+    <Content Include="core\image\icon-plus-inactive.png" />
+    <Content Include="core\image\icon-menu.png" />
+    <Content Include="core\image\icon-menu2x.png" />
+    <Content Include="core\image\marker-black.png" />
+    <Content Include="core\image\marker-green.png" />
+    <Content Include="core\image\marker-location1.png" />
+    <Content Include="core\image\marker-location2.png" />
+    <Content Include="core\image\marker-mustard.png" />
+    <Content Include="core\image\marker-peacock.png" />
+    <Content Include="core\image\marker-plum.png" />
+    <Content Include="core\image\marker-scarlet.png" />
+    <Content Include="core\image\marker-shadow.png" />
+    <Content Include="core\js\lifeclue.js">
+      <DependentUpon>lifeclue.js.bundle</DependentUpon>
+    </Content>
+    <Content Include="core\js\lifeclue.min.js">
+      <DependentUpon>lifeclue.js</DependentUpon>
+    </Content>
+    <Content Include="core\lib\backbone\backbone.js" />
+    <Content Include="core\lib\backgrid-moment-cell\backgrid-moment-cell.css" />
+    <Content Include="core\lib\backgrid-moment-cell\backgrid-moment-cell.js" />
+    <Content Include="core\lib\backgrid\backgrid.css" />
+    <Content Include="core\lib\backgrid\backgrid.js" />
+    <Content Include="core\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="core\lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="core\lib\bootstrap\js\bootstrap.js" />
+    <Content Include="core\lib\jquery-ui\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="core\lib\jquery-ui\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="core\lib\jquery-ui\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="core\lib\jquery-ui\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="core\lib\jquery-ui\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="core\lib\jquery-ui\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="core\lib\jquery-ui\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="core\lib\jquery-ui\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="core\lib\jquery-ui\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="core\lib\jquery-ui\images\ui-icons_222222_256x240.png" />
+    <Content Include="core\lib\jquery-ui\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="core\lib\jquery-ui\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="core\lib\jquery-ui\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="core\lib\jquery-ui\jquery-ui.css" />
+    <Content Include="core\lib\jquery-ui\jquery-ui.js" />
+    <Content Include="core\lib\jquery\jquery-2.1.4.js" />
+    <Content Include="core\lib\leaflet-label\images\death.png" />
+    <Content Include="core\lib\leaflet-label\leaflet.label-src.js" />
+    <Content Include="core\lib\leaflet-label\leaflet.label.css" />
+    <Content Include="core\lib\leaflet\images\layers-2x.png" />
+    <Content Include="core\lib\leaflet\images\layers.png" />
+    <Content Include="core\lib\leaflet\images\marker-icon-2x.png" />
+    <Content Include="core\lib\leaflet\images\marker-icon.png" />
+    <Content Include="core\lib\leaflet\images\marker-shadow.png" />
+    <Content Include="core\lib\leaflet\leaflet-src.js" />
+    <Content Include="core\lib\leaflet\leaflet.css" />
+    <Content Include="core\lib\momentjs\moment.js" />
+    <Content Include="core\lib\underscore\underscore.js" />
+    <Content Include="favicons\android-chrome-144x144.png" />
+    <Content Include="favicons\android-chrome-192x192.png" />
+    <Content Include="favicons\android-chrome-36x36.png" />
+    <Content Include="favicons\android-chrome-48x48.png" />
+    <Content Include="favicons\android-chrome-72x72.png" />
+    <Content Include="favicons\android-chrome-96x96.png" />
+    <Content Include="favicons\apple-touch-icon-114x114.png" />
+    <Content Include="favicons\apple-touch-icon-120x120.png" />
+    <Content Include="favicons\apple-touch-icon-144x144.png" />
+    <Content Include="favicons\apple-touch-icon-152x152.png" />
+    <Content Include="favicons\apple-touch-icon-180x180.png" />
+    <Content Include="favicons\apple-touch-icon-57x57.png" />
+    <Content Include="favicons\apple-touch-icon-60x60.png" />
+    <Content Include="favicons\apple-touch-icon-72x72.png" />
+    <Content Include="favicons\apple-touch-icon-76x76.png" />
+    <Content Include="favicons\apple-touch-icon-precomposed.png" />
+    <Content Include="favicons\apple-touch-icon.png" />
+    <Content Include="favicons\browserconfig.xml" />
+    <Content Include="favicons\favicon-16x16.png" />
+    <Content Include="favicons\favicon-32x32.png" />
+    <Content Include="favicons\favicon-96x96.png" />
+    <Content Include="favicons\favicon.ico" />
+    <Content Include="favicons\mstile-144x144.png" />
+    <Content Include="favicons\mstile-150x150.png" />
+    <Content Include="favicons\mstile-310x150.png" />
+    <Content Include="favicons\mstile-310x310.png" />
+    <Content Include="favicons\mstile-70x70.png" />
+    <Content Include="index.html" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="core\js\app.ts" />
+    <TypeScriptCompile Include="core\js\controller\characterfactory.ts" />
+    <TypeScriptCompile Include="core\js\controller\controller.ts" />
+    <TypeScriptCompile Include="core\js\controller\gamefactory.ts" />
+    <TypeScriptCompile Include="core\js\controller\locationfactory.ts" />
+    <TypeScriptCompile Include="core\js\controller\mapfactory.ts" />
+    <TypeScriptCompile Include="core\js\controller\setting.ts" />
+    <TypeScriptCompile Include="core\js\controller\weaponfactory.ts" />
+    <TypeScriptCompile Include="core\js\controller\wingfactory.ts" />
+    <TypeScriptCompile Include="core\js\model\gametable.ts" />
+    <TypeScriptCompile Include="core\js\model\character.ts" />
+    <TypeScriptCompile Include="core\js\model\location.ts" />
+    <TypeScriptCompile Include="core\js\model\model.ts" />
+    <TypeScriptCompile Include="core\js\model\weapon.ts" />
+    <TypeScriptCompile Include="core\js\view\mapview.ts" />
+    <TypeScriptCompile Include="core\js\view\markerview.ts" />
+    <TypeScriptCompile Include="core\js\view\view.ts" />
+    <TypeScriptCompile Include="core\js\view\wingview.ts" />
+    <TypeScriptCompile Include="Scripts\typings\backbone\backbone.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\backgrid\backgrid.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\bootstrap.v3.datetimepicker\bootstrap.v3.datetimepicker.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\bootstrap\bootstrap.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jqueryui\jqueryui.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\leaflet\leaflet.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\moment\moment.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\underscore\underscore.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="core\css\font\bonvenocf-light\BonvenoCF-Light-webfont.eot" />
+    <Content Include="core\css\font\bonvenocf-light\BonvenoCF-Light-webfont.ttf" />
+    <Content Include="core\css\font\bonvenocf-light\BonvenoCF-Light-webfont.woff" />
+    <Content Include="core\js\lifeclue.js.bundle" />
+    <Content Include="core\js\lifeclue.min.js.map">
+      <DependentUpon>lifeclue.min.js</DependentUpon>
+    </Content>
+    <Content Include="core\css\lifeclue.css.bundle" />
+    <Content Include="core\lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="core\lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="core\lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="core\php\gametable.php">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="core\php\database.php" />
+    <Content Include="core\php\selectcharacter.php" />
+    <Content Include="core\php\updatelocation.php" />
+    <Content Include="core\php\startgame.php" />
+    <Content Include="core\php\claimlocation.php" />
+    <Content Include="core\php\submitsuggestion.php" />
+    <Content Include="core\php\showcard.php" />
+    <Content Include="core\php\finishturn.php" />
+    <Content Include="core\php\winner.php" />
+    <Content Include="core\php\resetgame.php" />
+    <Content Include="core\php\gamestatistic.php" />
+    <Content Include="core\php\updatebrowsercache.php" />
+    <Content Include="core\php\resetbrowsercache.php" />
+    <Content Include="core\php\loadbrowsercache.php" />
+    <Content Include="favicons\manifest.json" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="core\json\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>FruitParent</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58554</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58554/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>
