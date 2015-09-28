@@ -13,6 +13,7 @@
         }
         public create(): Backbone.Collection<Character> {
             var locations: Backbone.Collection<Location> = new Locations();
+            // Temporary Location
             /*
             locations.add(new Character({
                 id: "l1",
